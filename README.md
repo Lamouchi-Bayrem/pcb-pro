@@ -101,24 +101,6 @@ This project includes links to YouTube video tutorials for PCB design topics. Se
 - **EEVblog**: Electronics engineering content
 - **GreatScott!**: DIY electronics projects
 
-## 🚀 GitHub Deployment
 
-### Quick Deploy:
-
-**Windows:**
-```bash
-setup_github.bat
-```
-
-**Linux/Mac:**
-```bash
-chmod +x setup_github.sh
-./setup_github.sh
-```
-
-### Manual Deploy:
-See `GITHUB_DEPLOY.md` for detailed instructions.
-
-## 📝 License
 
 MIT License
