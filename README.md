@@ -67,20 +67,7 @@ pcb_design_pro/
    - Access component libraries
    - Run design rule checks
 
-### Deploy to GitHub:
 
-**Windows:**
-```bash
-git_init_and_push.bat
-```
-
-**Linux/Mac:**
-```bash
-chmod +x git_init_and_push.sh
-./git_init_and_push.sh
-```
-
-See `GITHUB_SETUP_COMPLETE.md` for detailed instructions.
 
 ## 📖 Topics Covered
 
