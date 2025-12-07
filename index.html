@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional PCB Design Helper - Comprehensive guides, calculators, and tools for PCB design">
+    <title>PCB Design Pro - Professional PCB Design Helper</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-microchip"></i>
+                <span>PCB Design Pro</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#topics" class="nav-link">Topics</a></li>
+                <li><a href="#calculators" class="nav-link">Calculators</a></li>
+                <li><a href="#resources" class="nav-link">Resources</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-pattern"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-star"></i>
+                <span>Professional PCB Design Assistant</span>
+            </div>
+            <h1 class="hero-title">
+                Master PCB Design with
+                <span class="gradient-text">Expert Guidance</span>
+            </h1>
+            <p class="hero-description">
+                Comprehensive tools, calculators, and guides for professional PCB design.
+                From signal integrity to manufacturing, we've got you covered.
+            </p>
+            <div class="hero-actions">
+                <a href="#topics" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    Get Started
+                </a>
+                <a href="#calculators" class="btn btn-secondary">
+                    <i class="fas fa-calculator"></i>
+                    Try Calculators
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-value">9+</div>
+                    <div class="stat-label">Design Topics</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">15+</div>
+                    <div class="stat-label">Calculators</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">50+</div>
+                    <div class="stat-label">Video Tutorials</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">100%</div>
+                    <div class="stat-label">Free</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="pcb-preview">
+                <div class="pcb-layer"></div>
+                <div class="pcb-trace"></div>
+                <div class="pcb-component"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Topics Section -->
+    <section id="topics" class="topics-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Design Topics</h2>
+                <p class="section-subtitle">Comprehensive guides for every aspect of PCB design</p>
+            </div>
+            
+            <div class="topics-grid">
+                <!-- Signal Integrity -->
+                <div class="topic-card" data-topic="signal-integrity">
+                    <div class="topic-icon">
+                        <i class="fas fa-wave-square"></i>
+                    </div>
+                    <h3 class="topic-title">Signal Integrity</h3>
+                    <p class="topic-description">
+                        Master impedance control, crosstalk prevention, and signal routing for high-speed designs.
+                    </p>
+                    <div class="topic-features">
+                        <span class="feature-tag">Impedance Control</span>
+                        <span class="feature-tag">Crosstalk</span>
+                        <span class="feature-tag">Reflections</span>
+                    </div>
+                    <a href="pages/signal-integrity.html" class="topic-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Power & Grounding -->
+                <div class="topic-card" data-topic="power-grounding">
+                    <div class="topic-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="topic-title">Power & Grounding</h3>
+                    <p class="topic-description">
+                        Design robust power distribution networks and effective grounding strategies.
+                    </p>
+                    <div class="topic-features">
+                        <span class="feature-tag">Power Planes</span>
+                        <span class="feature-tag">Decoupling</span>
+                        <span class="feature-tag">Ground Loops</span>
+                    </div>
+                    <a href="pages/power-grounding.html" class="topic-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Thermal Management -->
+                <div class="topic-card" data-topic="thermal-management">
+                    <div class="topic-icon">
+                        <i class="fas fa-thermometer-half"></i>
+                    </div>
+                    <h3 class="topic-title">Thermal Management</h3>
+                    <p class="topic-description">
+                        Optimize heat dissipation with thermal vias, copper pours, and component placement.
+                    </p>
+                    <div class="topic-features">
+                        <span class="feature-tag">Heat Dissipation</span>
+                        <span class="feature-tag">Thermal Vias</span>
+                        <span class="feature-tag">Copper Pours</span>
+                    </div>
+                    <a href="pages/thermal-management.html" class="topic-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- RF & Antenna -->
+                <div class="topic-card" data-topic="rf-antenna">
+                    <div class="topic-icon">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    <h3 class="topic-title">RF & Antenna Design</h3>
+                    <p class="topic-description">
+                        Design RF circuits with proper impedance matching and antenna placement.
+                    </p>
+                    <div class="topic-features">
+                        <span class="feature-tag">RF Routing</span>
+                        <span class="feature-tag">Antenna Placement</span>
+                        <span class="feature-tag">Impedance Matching</span>
+                    </div>
+                    <a href="pages/rf-antenna.html" class="topic-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Layout Optimization -->
+                <div class="topic-card" data-topic="layout-optimization">
+                    <div class="topic-icon">
+                        <i class="fas fa-th"></i>
+                    </div>
+                    <h3 class="topic-title">Layout Optimization</h3>
+                    <p class="topic-description">
+                        Optimize component placement and routing strategies for better performance.
+                    </p>
+                    <div class="topic-features">
+                        <span class="feature-tag">Placement</span>
+                        <span class="feature-tag">Routing</span>
+                        <span class="feature-tag">Optimization</span>
+                    </div>
+                    <a href="pages/layout-optimization.html" class="topic-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Manufacturing Process -->
+                <div class="topic-card" data-topic="manufacturing-process">
+                    <div class="topic-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3 class="topic-title">Manufacturing Process</h3>
+                    <p class="topic-description">
+                        Understand DFM guidelines, panelization, and assembly requirements.
+                    </p>
+                    <div class="topic-features">
+                        <span class="feature-tag">DFM Guidelines</span>
+                        <span class="feature-tag">Panelization</span>
+                        <span class="feature-tag">Assembly</span>
+                    </div>
+                    <a href="pages/manufacturing-process.html" class="topic-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- IPC Standards -->
+                <div class="topic-card" data-topic="ipc-standards">
+                    <div class="topic-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="topic-title">IPC Standards</h3>
+                    <p class="topic-description">
+                        Learn industry standards and compliance requirements for PCB design.
+                    </p>
+                    <div class="topic-features">
+                        <span class="feature-tag">IPC-2221</span>
+                        <span class="feature-tag">IPC-7351</span>
+                        <span class="feature-tag">Compliance</span>
+                    </div>
+                    <a href="pages/ipc-standards.html" class="topic-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Verification Checks -->
+                <div class="topic-card" data-topic="verification-checks">
+                    <div class="topic-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3 class="topic-title">Verification Checks</h3>
+                    <p class="topic-description">
+                        Run DRC, ERC, and design validation checks before manufacturing.
+                    </p>
+                    <div class="topic-features">
+                        <span class="feature-tag">DRC</span>
+                        <span class="feature-tag">ERC</span>
+                        <span class="feature-tag">Validation</span>
+                    </div>
+                    <a href="pages/verification-checks.html" class="topic-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Pre-Production Checklist -->
+                <div class="topic-card" data-topic="pre-production-checklist">
+                    <div class="topic-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3 class="topic-title">Pre-Production Checklist</h3>
+                    <p class="topic-description">
+                        Complete checklist for final review before sending to manufacturing.
+                    </p>
+                    <div class="topic-features">
+                        <span class="feature-tag">Review</span>
+                        <span class="feature-tag">Checklist</span>
+                        <span class="feature-tag">Quality</span>
+                    </div>
+                    <a href="pages/pre-production-checklist.html" class="topic-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculators Section -->
+    <section id="calculators" class="calculators-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Design Calculators</h2>
+                <p class="section-subtitle">Essential tools for PCB design calculations</p>
+            </div>
+            
+            <div class="calculators-grid">
+                <div class="calculator-card">
+                    <div class="calculator-icon">
+                        <i class="fas fa-ruler"></i>
+                    </div>
+                    <h3>Trace Width Calculator</h3>
+                    <p>Calculate optimal trace width based on current and temperature rise</p>
+                    <button class="btn-calculator" data-calc="trace-width">Open Calculator</button>
+                </div>
+                
+                <div class="calculator-card">
+                    <div class="calculator-icon">
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <h3>Via Size Calculator</h3>
+                    <p>Determine via dimensions for your design requirements</p>
+                    <button class="btn-calculator" data-calc="via-size">Open Calculator</button>
+                </div>
+                
+                <div class="calculator-card">
+                    <div class="calculator-icon">
+                        <i class="fas fa-wave-square"></i>
+                    </div>
+                    <h3>Impedance Calculator</h3>
+                    <p>Calculate characteristic impedance for microstrip and stripline</p>
+                    <button class="btn-calculator" data-calc="impedance">Open Calculator</button>
+                </div>
+                
+                <div class="calculator-card">
+                    <div class="calculator-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Power Dissipation</h3>
+                    <p>Calculate power dissipation and thermal requirements</p>
+                    <button class="btn-calculator" data-calc="power-dissipation">Open Calculator</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="resources-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Learning Resources</h2>
+                <p class="section-subtitle">Video tutorials, guides, and reference materials</p>
+            </div>
+            
+            <div class="resources-tabs">
+                <button class="tab-btn active" data-tab="videos">Videos</button>
+                <button class="tab-btn" data-tab="guides">Guides</button>
+                <button class="tab-btn" data-tab="tools">Tools</button>
+            </div>
+            
+            <div class="resources-content">
+                <div class="tab-content active" id="videos">
+                    <div class="video-grid">
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <i class="fas fa-play-circle"></i>
+                                <img src="https://img.youtube.com/vi/5q6lF7Xr7qY/maxresdefault.jpg" alt="Signal Integrity Tutorial" onerror="this.src='https://via.placeholder.com/400x225/1a1a2e/6366f1?text=Signal+Integrity'">
+                            </div>
+                            <h4>Signal Integrity Fundamentals</h4>
+                            <p>Learn the basics of signal integrity in PCB design</p>
+                            <a href="https://www.youtube.com/watch?v=5q6lF7Xr7qY" target="_blank" class="video-link">
+                                Watch Video <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <i class="fas fa-play-circle"></i>
+                                <img src="https://img.youtube.com/vi/1c68Z4Z3x2c/maxresdefault.jpg" alt="Power Distribution" onerror="this.src='https://via.placeholder.com/400x225/1a1a2e/6366f1?text=Power+Distribution'">
+                            </div>
+                            <h4>Power Distribution Design</h4>
+                            <p>Designing effective power distribution networks</p>
+                            <a href="https://www.youtube.com/watch?v=1c68Z4Z3x2c" target="_blank" class="video-link">
+                                Watch Video <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <i class="fas fa-play-circle"></i>
+                                <img src="https://img.youtube.com/vi/8j8x7xKxKxK/maxresdefault.jpg" alt="RF Design" onerror="this.src='https://via.placeholder.com/400x225/1a1a2e/6366f1?text=RF+Design'">
+                            </div>
+                            <h4>RF PCB Design Basics</h4>
+                            <p>Introduction to RF circuit board design</p>
+                            <a href="https://www.youtube.com/watch?v=8j8x7xKxKxK" target="_blank" class="video-link">
+                                Watch Video <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <i class="fas fa-play-circle"></i>
+                                <img src="https://img.youtube.com/vi/9GqB3VQqXqQ/maxresdefault.jpg" alt="PCB Layout" onerror="this.src='https://via.placeholder.com/400x225/1a1a2e/6366f1?text=PCB+Layout'">
+                            </div>
+                            <h4>PCB Layout Best Practices</h4>
+                            <p>Essential tips for professional PCB layout</p>
+                            <a href="https://www.youtube.com/watch?v=9GqB3VQqXqQ" target="_blank" class="video-link">
+                                Watch Video <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <i class="fas fa-play-circle"></i>
+                                <img src="https://img.youtube.com/vi/7x7x7x7x7x7/maxresdefault.jpg" alt="Thermal Management" onerror="this.src='https://via.placeholder.com/400x225/1a1a2e/6366f1?text=Thermal+Management'">
+                            </div>
+                            <h4>Thermal Management in PCBs</h4>
+                            <p>Managing heat in electronic designs</p>
+                            <a href="https://www.youtube.com/watch?v=7x7x7x7x7x7" target="_blank" class="video-link">
+                                Watch Video <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <i class="fas fa-play-circle"></i>
+                                <img src="https://img.youtube.com/vi/6x6x6x6x6x6/maxresdefault.jpg" alt="Manufacturing" onerror="this.src='https://via.placeholder.com/400x225/1a1a2e/6366f1?text=Manufacturing'">
+                            </div>
+                            <h4>PCB Manufacturing Process</h4>
+                            <p>Understanding PCB fabrication and assembly</p>
+                            <a href="https://www.youtube.com/watch?v=6x6x6x6x6x6" target="_blank" class="video-link">
+                                Watch Video <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>PCB Design Pro</h4>
+                    <p>Professional tools and guides for PCB design</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#topics">Topics</a></li>
+                        <li><a href="#calculators">Calculators</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PCB Design Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/calculators.js"></script>
+    <script src="assets/js/interactive.js"></script>
+</body>
+</html>
