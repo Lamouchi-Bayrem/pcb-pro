@@ -1,0 +1,22 @@
+.checklist {
+    display: flex;
+    flex-direction: column;
+}
+
+.checklist label {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.checklist input {
+    margin-right: 10px;
+}
+
+.checklist .checked {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+#resetChecklist {
+    margin-top: 20px;
+}
